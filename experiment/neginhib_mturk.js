@@ -75,7 +75,6 @@ $("#beforeStudy").attr("disabled", true);
 			$("#pleaseWait").html("");
 		})
 	}
-}
 
 // MAIN EXPERIMENT
 var experiment = {
