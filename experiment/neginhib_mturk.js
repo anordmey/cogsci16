@@ -67,9 +67,6 @@ showSlide("instructions");
 //The button is disabled until all of the images are preloaded
 //Button is also disabled if turk is in preview mode
 $("#beforeStudy").attr("disabled", true);
-if (isChrome = !!window.chrome == false) {
-	$("#pleaseWait").html("You must use the Google Chrome Browser to take this HIT.");
-} else {
 	$("#pleaseWait").html("Please accept this HIT to continue");
 	if (turk.previewMode != true) {
 		$("#pleaseWait").html("Please wait...");
@@ -403,9 +400,10 @@ var experiment = {
 		dataforRound += "," + experiment.pic1type + "," + experiment.pic2type;
 		dataforRound += "," + experiment.side + "," + experiment.chosenpic + "," + experiment.response;
 		dataforRound += "," + experiment.date + "," + experiment.timestamp + "," + experiment.reactiontime + "\n";
-		$.post("https://langcog.stanford.edu/cgi-bin/EJY/neginhib/neginhibstudysave.php", {
-			postresult_string: dataforRound
-		});
+		//no data collection for example script
+		//$.post("https://langcog.stanford.edu/cgi-bin/EJY/neginhib/neginhibstudysave.php", {
+		//	postresult_string: dataforRound
+		//});
 	},
 
 	background: function() {
