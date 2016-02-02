@@ -17,7 +17,7 @@ The three games were:
 
 
 Kids played these games at the CDM on a computer (4, 5, and 6-year-olds), with 60 trials per game.  Adults completed the task on MTurk, with 120 trials per game.  The adult version of the task can be viewed here: 
-https://langcog.stanford.edu/expts/EJY/neginhib/v1/turk/neginhib_mturk.html
+http://anordmey.github.io/cogsci16/experiment/neginhib_mturk.html
 
 
 # Setting up
